@@ -1,0 +1,9 @@
+#CONTRUIR CONTENEDOR
+docker build -t  .
+
+#CREA LA RED INTERNA MUNDOTERRA
+docker network create -d bridge mundoterra-network
+
+#EJECUTA E INICIALIZA CONTENEDOR
+docker-compose up -d
+
